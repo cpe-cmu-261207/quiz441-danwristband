@@ -117,7 +117,7 @@ app.post('/withdraw',
 app.delete('/reset', (req, res) => {
 
   //code your database reset here
-  // .destroy({where:{},truncate:true})
+  // db.destroy({where:{},truncate:true})
   
   return res.status(200).json({
     message: 'Reset database successfully'
@@ -125,7 +125,14 @@ app.delete('/reset', (req, res) => {
 })
 
 app.get('/me', (req, res) => {
-  
+  return res.status(200).json({
+    
+
+  "firstname": "Akkaraphan",
+  "lastname" : "Rattanakos",
+  "code" : 620610821,
+  "gpa" : "2.5?"
+  })
 })
 
 app.get('/demo', (req, res) => {
